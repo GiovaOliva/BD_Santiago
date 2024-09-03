@@ -1,0 +1,105 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A749A8F4-D191-9128-AC0F-63148AE7BCC1" name="Orden_de_Atencion">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:41:52 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Orden" id="D8C5A8D7-C2B7-E27B-7617-04E4967EABD6">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:49:42 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha" id="2157BAD5-D234-8815-90D7-2589DF7814A5">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:49:42 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Tipo de Servicio" id="2CA2A7B1-B08C-0625-1DDC-1E395FC760C7">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:49:42 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Cliente_RUT" id="2DD154D7-2C1E-3085-C5C6-BD389814C4AA">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:49:42 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AF5A073C-5EC0-D456-9A80-053DFB38DDB8" referredColumn="6671491E-0C77-AD06-A499-E899847B13CB"/>
+</associations>
+</Column>
+<Column name="Vehiculo_Patente" id="AF53BFA7-E65B-265B-FE5D-287BBB595482">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:49:42 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8EEC452A-E5C2-A19B-281C-21A1DBE5487F" referredColumn="CF7AE866-6E53-F72F-79EE-660C43685A13"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F67C15A1-0072-5BF7-1FCE-BEF91559F18C" name="Orden de Atencion_PK">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:49:42 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D8C5A8D7-C2B7-E27B-7617-04E4967EABD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="551ADBAC-8B61-F3BC-CBF5-5C6FD2775429" name="Orden_de_Atencion_Cliente_FK">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:49:42 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2DD154D7-2C1E-3085-C5C6-BD389814C4AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A9ED76A-F27F-123A-120A-1CBC07E81076" name="Orden_de_Atencion_Vehiculo_FK">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:49:42 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AF53BFA7-E65B-265B-FE5D-287BBB595482"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

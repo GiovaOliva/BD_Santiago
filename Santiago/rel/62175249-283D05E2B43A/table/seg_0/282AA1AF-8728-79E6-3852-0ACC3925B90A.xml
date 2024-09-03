@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="282AA1AF-8728-79E6-3852-0ACC3925B90A" name="Detalle_Repuesto">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:09:02 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<ordsAlias>table_14</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Servicio" id="F087467B-C305-CC31-AD08-68696C5E16B9">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:12:14 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5CC7C250-1231-BC0B-976A-8A1FBAF3CC73" referredColumn="5876287C-B290-3BF5-3461-81E4B8270A0E"/>
+</associations>
+</Column>
+<Column name="ID_Repuesto" id="C35005A5-79D6-1EA4-9AC9-7135634B2663">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:12:14 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6FE445C4-ACD7-F00C-A87A-5A01515F457F" referredColumn="157DCEEC-6461-D1F8-AD0C-D79978B96942"/>
+</associations>
+</Column>
+<Column name="Cantidad" id="8FE50125-BCEB-08BE-329A-F18F778428F3">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:12:14 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4F4163D0-978C-4E7E-8932-38F14CE56BA6" name="Detalle_Repuesto_PK">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:12:14 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F087467B-C305-CC31-AD08-68696C5E16B9"/>
+<colUsage columnID="C35005A5-79D6-1EA4-9AC9-7135634B2663"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CBD239C-77E4-B9D1-12A9-714AFA1C6B04" name="Detalle_Repuestos_Servicios_FK">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:12:14 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F087467B-C305-CC31-AD08-68696C5E16B9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E01AFF93-A848-ACED-285E-C409717BA41C" name="Detalle_Repuestos_Repuestos_FK">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:12:14 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C35005A5-79D6-1EA4-9AC9-7135634B2663"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

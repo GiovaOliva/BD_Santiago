@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FDE69651-C9A5-177A-FF15-13B469F6D825" name="Validacion">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:13:11 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<ordsAlias>table_16</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ID_Validacion" id="5408AA88-F9A2-D8EF-FE25-38343510BB3C">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:16:06 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID_Servicio" id="BDC3CA80-369A-7129-7601-3D8A450E8028">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:16:06 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FAC3E86D-0208-AD35-7810-86702DB2C0ED" referredColumn="5876287C-B290-3BF5-3461-81E4B8270A0E"/>
+</associations>
+</Column>
+<Column name="Validado" id="155C9C01-2E29-41B6-2134-6DC96F047FCA">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:16:06 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Fecha_Validacion" id="D3CACB2F-1829-7A9F-9165-DD2B4C51665C">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:16:06 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Observaciones" id="41350C0A-245F-C67D-F770-FA9B3C115AFA">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:16:06 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C5606816-C156-1628-EAD9-065D1ED23869" name="Validacion_PK">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:16:06 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5408AA88-F9A2-D8EF-FE25-38343510BB3C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1CA36027-315A-286A-A0E1-EB17D29E0C2B" name="Validacion_Servicios_FK">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 03:16:06 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDC3CA80-369A-7129-7601-3D8A450E8028"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

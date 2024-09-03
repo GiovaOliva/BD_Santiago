@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="230FDD6F-E393-B72A-41F8-362F780F36F5" name="Cliente">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:31:55 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RUT" id="6671491E-0C77-AD06-A499-E899847B13CB">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:34:13 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombres" id="52CF26B4-A81B-992F-B7D7-EF307FBF23ED">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:34:13 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellidos" id="ADB9CE33-0957-800E-9C47-561B0E3AF847">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:34:13 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Domicilio" id="BF0AC425-28E2-845C-3403-62F7301DBFBC">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:34:13 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Contactos" id="5119FC6D-AC71-A421-A2D5-58EA9ACBDC1A">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:34:13 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1DC18401-1EAF-1100-7B74-BE3ADF692029" name="Cliente_PK">
+<createdBy>gio</createdBy>
+<createdTime>2024-09-03 01:34:13 UTC</createdTime>
+<ownerDesignName>Santiago</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6671491E-0C77-AD06-A499-E899847B13CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
